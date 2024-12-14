@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>Youtube Playlist</name>
+    <author>Shan Shanmugaesan (AirrayUK.com)</author>
+	<copyright> (c) AirrayUK.com </copyright> 
+    <creationDate> 15 May 2022</creationDate>
+    <version>1.0.0</version>
+	<authorEmail> airrayuk@gmail.com </authorEmail>
+	<authorUrl> www.airrayuk.com </authorUrl>
+    <description>Retrieve and display a Youtube Playlist</description>
+    <files>
+        <filename>mod_youtubeplaylist.xml</filename>
+        <filename module="mod_youtubeplaylist">mod_youtubeplaylist.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+    </files>    
+	<config>
+		<fields name="params" >
+			<fieldset name="basic">
+				<field name="yt_api_url" type="text" default="https://www.googleapis.com/youtube/v3/playlistItems" label="Youtube API URL" description="Youtube API URL" />
+				<field name="yt_api_key" type="text" default="" label="Youtube API Key" description="Youtube API Key" />
+				<field name="yt_playlist_id" type="text" default="" label="Youtube Playlist ID" description="Youtube Playlist ID" />
+				<field name="yt_playlist_response_part" type="text" default="id,contentDetails,snippet" label="Youtube Playlist Response Fields" description="Youtube Playlist Response Fields" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>
