@@ -4,5 +4,5 @@
 # Documentation for how to create an API key
 https://support.google.com/googleapi/answer/6158862?hl=en&ref_topic=7013279
 
-# Documentation for YouTube Data API
+# YouTube Data API Documentation
 https://developers.google.com/youtube/v3/getting-started
